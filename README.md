@@ -32,3 +32,4 @@ rostopic pub -r 1 isaac_a1/joint_torque_cmd sensor_msgs/JointState -- '{header: 
 ## TODO
 - [ ] Make the Robot default state to be in a sitting state (as real).
 - [ ] Make the custom message that contains the three parameters such as effort for x, y and rotation.
+- [ ] Check the input args of Isaac Sim A1 and Unitree A1.
