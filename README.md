@@ -26,8 +26,9 @@ rostopic pub -r 1 isaac_a1/joint_torque_cmd sensor_msgs/JointState -- '{header: 
 ```
 - The custom message will be made for simplicity 
 - ```a1_custom.py``` subscibes the topic whose type requires above values (header, position, velocity, effort)
-- Not all but the first three values of *effort* will be used as 'x, y, rad' for the advance of A1.  
+- Not all but the first three values of *effort* will be used for the advance of A1 in 'x, y, rotate' direction.  
 - For example, in the above command the A1 will move with 10 Nm in x direction which is 'forward' and 1 Nm in 'anti-clockwise rotation'.
 
 ## TODO
-- [ ] Make the Robot default state to be in a sitting state.
+- [ ] Make the Robot default state to be in a sitting state (as real).
+- [ ] Make the custom message that contains the three parameters such as effort for x, y and rotation.
