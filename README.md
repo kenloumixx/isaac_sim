@@ -28,3 +28,6 @@ rostopic pub -r 1 isaac_a1/joint_torque_cmd sensor_msgs/JointState -- '{header: 
 - ```a1_custom.py``` subscibes the topic whose type requires above values (header, position, velocity, effort)
 - Not all but the first three values of *effort* will be used as 'x, y, rad' for the advance of A1.  
 - For example, in the above command the A1 will move with 10 Nm in x direction which is 'forward' and 1 Nm in 'anti-clockwise rotation'.
+
+## TODO
+- [ ] Make the Robot default state to be in a sitting state.
