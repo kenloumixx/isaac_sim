@@ -13,6 +13,10 @@
 
 ## 3. Come back to ```root_dir``` and run 
 ```
+roscore
+```
+and in another terminal, run
+```
 ./python.sh standalone_examples/api/omni.isaac.quadruped/a1_custom.py
 ```
 
